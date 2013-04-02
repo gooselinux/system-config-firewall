@@ -1,0 +1,334 @@
+commit 994eb2c44d5829270475a2cb81a0beccf7b3e0b3
+Author: ifelix <ifelix@fedoraproject.org>
+Date:   Mon Aug 16 10:06:29 2010 +0000
+
+    l10n: Updates to Tamil (ta) translation
+    
+    Transmitted-via: Transifex (translate.fedoraproject.org)
+
+diff --git a/po/ta.po b/po/ta.po
+index d0aa3b1..c5c9508 100644
+--- a/po/ta.po
++++ b/po/ta.po
+@@ -14,15 +14,16 @@ msgid ""
+ msgstr ""
+ "Project-Id-Version: system-config-firewall.master.ta\n"
+ "Report-Msgid-Bugs-To: \n"
+-"POT-Creation-Date: 2010-07-22 09:36+0200\n"
+-"PO-Revision-Date: 2010-06-30 09:47+0530\n"
++"POT-Creation-Date: 2010-06-24 15:31+0200\n"
++"PO-Revision-Date: 2010-08-16 15:30+0530\n"
+ "Last-Translator: I Felix <ifelix@redhat.com>\n"
+ "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "X-Generator: Lokalize 1.0\n"
+-"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
++"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
++"\n"
+ "\n"
+ "\n"
+ "\n"
+@@ -30,7 +31,7 @@ msgstr ""
+ #: ../config/org.fedoraproject.config.firewall.0.policy.in.h:1
+ #: ../config/org.fedoraproject.config.firewall.policy.in.h:1
+ msgid "Authentication is required to read and modify firewall settings"
+-msgstr "ஃபயர்வால் அமைவுகளை வாசிக்க மற்றும் மாற்ற அனுமதி தேவை"
++msgstr "தேவையான ஃபயர்வால் அமைவுகளை வாசிக்க மற்றும் மாற்ற அனுமதி தேவை"
+ 
+ #: ../config/org.fedoraproject.config.firewall.0.policy.in.h:2
+ #: ../config/org.fedoraproject.config.firewall.policy.in.h:2
+@@ -287,8 +288,7 @@ msgid ""
+ msgstr "'ஆம்' பொத்தான் இருக்கும் ஃபயர்வால் கட்டமைப்பை மேலாணை செய்யும். இதை செய்ய வேண்டுமா?"
+ 
+ #: ../src/fw_gui.py:2167 ../src/fw_tui.py:636
+-msgid ""
+-"Please remember to check if the services iptables and ip6tables are enabled."
++msgid "Please remember to check if the services iptables and ip6tables are enabled."
+ msgstr "சேவைகள் iptables மற்றும் ip6tables செயல்படுத்தப்பட்டால் அவற்றை சோதிக்கவும்."
+ 
+ #: ../src/fw_gui.py:2221 ../src/fw_tui.py:675
+@@ -344,8 +344,7 @@ msgstr "திருப்பப்படுகிறது"
+ 
+ #: ../src/fw_icmp.py:42
+ msgid "This error message informs a host to send packets on another route."
+-msgstr ""
+-"இந்தப் பிழை செய்தி ஒரு புரவலன் வேறு பாதையில் பாக்கெட்டுகளை அனுப்புவதை தெரிவிக்கிறது."
++msgstr "இந்தப் பிழை செய்தி ஒரு புரவலன் வேறு பாதையில் பாக்கெட்டுகளை அனுப்புவதை தெரிவிக்கிறது."
+ 
+ #: ../src/fw_icmp.py:44
+ msgid "Router Advertisement"
+@@ -626,9 +625,9 @@ msgid ""
+ "destination port (no destination address given) or to an other destination "
+ "address with an optional destination port. This is IPv4 only."
+ msgstr ""
+-"Forward the port with protocol for the interface to either another local "
+-"destination port (no destination address given) or to an other destination "
+-"address with an optional destination port. This is IPv4 only."
++"நெறிமுறையுடன் துறையை முன்னனுப்பவது மற்ற உள்ளமை இலக்கு துறைக்கு (இலக்கு முகவரி "
++"கொடுக்கப்படவில்லை) அல்லது வேறு இலக்கு முகவரிக்கு விருப்பமான இலக்கு துறையாக முன்னனுப்பும். இது "
++"IPv4 மட்டும்."
+ 
+ #: ../src/fw_parser.py:216
+ msgid "<icmp type>"
+@@ -733,8 +732,7 @@ msgstr ""
+ 
+ #: ../src/fw_parser.py:405 ../src/fw_parser.py:458
+ #, python-format
+-msgid ""
+-"Set firewall default type: %s. This overwrites any existing configuration."
++msgid "Set firewall default type: %s. This overwrites any existing configuration."
+ msgstr ""
+ "முன்னிருப்பு ஃபயர்வால் வகையை அமைத்தல்: %s. இது ஏற்கனவே இருக்கும் கட்டமைப்பை "
+ "மேலெழுதுகிறது."
+@@ -804,11 +802,10 @@ msgid ""
+ "it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+ "this option."
+ msgstr ""
+-"Internet Protocol Security (IPsec) incorporates security for network "
+-"transmissions directly into the Internet Protocol (IP). IPsec provides "
+-"methods for both encrypting data and authentication for the host or network "
+-"it sends to. If you plan to use a vpnc server or FreeS/WAN, do not disable "
+-"this option."
++"Internet Protocol Security (IPsec) பிணைய பரிமாற்றங்களுக்கு நேரடியாக Internet Protocol (IP) "
++"செயல்படுத்தப்பட்டுள்ளது. IPsec மறைகுறியாக்க தரவு மற்றும் அங்கீகாரத்தை புரவலன் அல்லது "
++"பிணையத்திற்கு அனுப்புகிறது. நீங்கள் ஒரு vpnc சேவையகம் அல்லது FreeS/WANஐ பயன்படுத்தினால், இந்த "
++"விருப்பத்தை செயல்நீக்க வேண்டாம்."
+ 
+ #: ../src/fw_services.py:66
+ msgid "SSH"
+@@ -976,9 +973,9 @@ msgid ""
+ "from a remote server over a TCP/IP connection. Enable this option, if you "
+ "plan to provide a POP3 service (e.g. with dovecot)."
+ msgstr ""
+-"The Post Office Protocol version 3 (POP3) is a protocol to retrieve email "
+-"from a remote server over a TCP/IP connection. Enable this option, if you "
+-"plan to provide a POP3 service (e.g. with dovecot)."
++"Post Office Protocol பதிப்பு 3 (POP3) என்பது ஒரு மின்னஞ்சல் பெறும் ஒரு தொலை சேவையகம் ஒரு "
++"TCP/IP இணைப்பில் உள்ளது. ஒரு POP3 சேவையை வழங்க நினைத்தால் இந்த விருப்பத்தை செயல்படுத்தவும் (எ."
++"கா dovecot உடன்)."
+ 
+ #: ../src/fw_services.py:138
+ msgid "RADIUS"
+@@ -991,10 +988,10 @@ msgid ""
+ "wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+ "with freeradius), enable this option."
+ msgstr ""
+-"The Remote Authentication Dial In User Service (RADIUS) is a protocol for "
+-"user authentication over networks. It is mostly used for modem, DSL or "
+-"wireless user authentication. If you plan to provide a RADIUS service (e.g. "
+-"with freeradius), enable this option."
++"Remote Authentication Dial In User Service (RADIUS) என்பது பயனர் அங்கீகாரத்தின் மேலே உள்ள "
++"நெறிமுறையாகும். இது பெரும்பாலும் மோடம், DSL அல்லது வயர்லெஸ் பயனர் அங்கீகாரத்தில் பயன்படுகிறது."
++" நீங்கள் ஒரு RADIUS சேவையை வழங்க இருந்தால் (எ.கா "
++"freeradiusஉடன்), இந்த விருப்பத்தை செயல்படுத்தவும்."
+ 
+ #: ../src/fw_services.py:144
+ msgid "OpenVPN"
+@@ -1006,9 +1003,9 @@ msgid ""
+ "encrypted point-to-point tunnels between computers. If you plan to provide a "
+ "VPN service, enable this option."
+ msgstr ""
+-"OpenVPN is a virtual private network (VPN) solution. It is used to create "
+-"encrypted point-to-point tunnels between computers. If you plan to provide a "
+-"VPN service, enable this option."
++"OpenVPN என்பது ஒரு மெய்நிகர் தனிப்பட்ட பிணைய (VPN) தீர்வு. இது ஒரு மறைகுறியாக்கப்பட்ட "
++"பாயிண்ட்டு பாயிண்ட் டனல்களை கணினிகளுக்கிடையே உருவாக்குகிறது. நீங்கள் ஒரு VPN சேவையை வழங்க "
++"நினைத்தால் இந்த விருப்பத்தை செயல்படுத்தவும்."
+ 
+ #: ../src/fw_services.py:149
+ msgid "TFTP"
+@@ -1040,7 +1037,7 @@ msgstr ""
+ 
+ #: ../src/fw_services.py:162
+ msgid "Red Hat Cluster Suite"
+-msgstr "Red Hat Cluster Suite"
++msgstr "Red Hat க்ளஸ்டர் தொகுப்பு"
+ 
+ #: ../src/fw_services.py:174
+ msgid ""
+@@ -1068,7 +1065,7 @@ msgstr ""
+ 
+ #: ../src/fw_services.py:186
+ msgid "Bacula Client"
+-msgstr "பாகுலா கிளையன்"
++msgstr "பேக்குலா கிளையன்"
+ 
+ #: ../src/fw_services.py:187
+ msgid ""
+@@ -1076,20 +1073,21 @@ msgid ""
+ "schedule backups. You need the bacula-client package installed for this "
+ "option to be useful."
+ msgstr ""
+-"இந்த விருப்பம் உங்களை பின்சேமிப்புகளை திட்டமிட உள்ளமை கணினியுடன் இணைக்க அனுமதிக்கிறது. "
+-"இந்த விருப்பத்தைப் பயனுள்ளதாக்க நீங்கள் பாகுலா-கிளையன் தொகுப்பு நிறுவ வேண்டும்."
++"இந்த விருப்பம் ஒரு பேக்குலா சேவையகத்தை உள்ளமை கணினியுடன் திட்ட பின்சேமிப்புகள் செய்ய "
++"அனுமதிக்கிறது. இந்த விருப்பத்தைப் பயனுள்ளதாக்க நீங்கள் பேக்குலா-கிளையன் தொகுப்பு நிறுவ "
++"வேண்டும்."
+ 
+ #: ../src/fw_services.py:190
+ msgid "Bacula"
+-msgstr "பாகுலா"
++msgstr "பேக்குலா"
+ 
+ #: ../src/fw_services.py:192
+ msgid ""
+ "Bacula is a network backup solution. Enable this option, if you plan to "
+ "provide Bacula backup, file and storage services."
+ msgstr ""
+-"பாகுலா ஒரு பிணைய பின்சேமிப்பு தீர்வு. பாகுலா பின்சேமிப்புர கோப்பு சேமிப்பக சேவைகளை "
+-"வழங்க திட்டமிட்டால், இந்த விருப்பத்தை செயல்படுத்தவும்."
++"பாகுலா ஒரு பிணைய பின்சேமிப்பு தீர்வு. பாகுலா பின்சேமிப்புர கோப்பு சேமிப்பக சேவைகளை வழங்க "
++"திட்டமிட்டால், இந்த விருப்பத்தை செயல்படுத்தவும்."
+ 
+ #: ../src/fw_services.py:196
+ msgid "Virtual Machine Management"
+@@ -1101,8 +1099,8 @@ msgid ""
+ "with SASL authentication and encryption (digest-md5 passwords or GSSAPI/"
+ "Kerberos). The libvirtd service is needed for this option to be useful."
+ msgstr ""
+-"நீங்கள் தொலை மெய்நிகர் கணினி மேலாண்மையை SASL அங்கீகாரம் மற்றும் மெய்நிகராக்கத்துடன் "
+-"அனுமதிக்க இந்த விருப்பத்தை செயல்படுத்தவும் (digest-md5 கடவுச்சொற்கள் அல்லது GSSAPI/"
++"நீங்கள் தொலை மெய்நிகர் கணினி மேலாண்மையை SASL அங்கீகாரம் மற்றும் மெய்நிகராக்கத்துடன் அனுமதிக்க "
++"இந்த விருப்பத்தை செயல்படுத்தவும் (digest-md5 கடவுச்சொற்கள் அல்லது GSSAPI/"
+ "Kerberos). libvirtd இந்த விருப்பத்திற்கு தேவைப்படுகிறது."
+ 
+ #: ../src/fw_services.py:202
+@@ -1115,8 +1113,8 @@ msgid ""
+ "with TLS encryption, x509 certificates and optional SASL authentication. The "
+ "libvirtd service is needed for this option to be useful."
+ msgstr ""
+-"நீங்கள் தொலை மெய்நிகர் கணினி மேலாண்மையை  TLS மறைகுறியாக்கம், x509 சான்றிதழ்கள், விருப்ப "
+-"SASL அங்கீகாரம் ஆகியவற்றுடன் அனுமதிக்க இந்த விருப்பத்தை செயல்படுத்தவும். libvirtd இந்த "
++"நீங்கள் தொலை மெய்நிகர் கணினி மேலாண்மையை  TLS மறைகுறியாக்கம், x509 சான்றிதழ்கள், விருப்ப SASL "
++"அங்கீகாரம் ஆகியவற்றுடன் அனுமதிக்க இந்த விருப்பத்தை செயல்படுத்தவும். libvirtd இந்த "
+ "விருப்பத்திற்கு தேவைப்படுகிறது."
+ 
+ #: ../src/fw_tui.py:47
+@@ -1190,10 +1188,8 @@ msgid "Trusted Interfaces"
+ msgstr "நம்பப்பட்ட முகப்புகள்"
+ 
+ #: ../src/fw_tui.py:108 ../src/system-config-firewall.glade.h:58
+-msgid ""
+-"Mark all interfaces as trusted which should have full access to the system."
+-msgstr ""
+-"கணினியுடன் முழு அணுகல் செய்யும் அனைத்து முகப்புகளையும் நம்பகமானது என குறிக்கவும்."
++msgid "Mark all interfaces as trusted which should have full access to the system."
++msgstr "கணினியுடன் முழு அணுகல் செய்யும் அனைத்து முகப்புகளையும் நம்பகமானது என குறிக்கவும்."
+ 
+ #. masquerading
+ #: ../src/fw_tui.py:116 ../src/system-config-firewall.glade.h:61
+@@ -1217,10 +1213,9 @@ msgid ""
+ "system is only useful if the interface is masqueraded. Port forwarding is "
+ "IPv4 only."
+ msgstr ""
+-"Add entries to forward ports either from one port to another on the local "
+-"system or from the local system to another system. Forwarding to another "
+-"system is only useful if the interface is masqueraded. Port forwarding is "
+-"IPv4 only."
++"உள்ளீடுகளை சேர்க்க ஒரு துறையிலிருந்து மற்றொன்றிற்கு உள்ளமை கணினி அல்லது வேறு கணினியிலிருந்த "
++"சேர்க்கவும். வேறு கணினியை முன்னனுப்புவது முகப்பு சரியாக இருந்தால் மட்டுமே பயனாக இருக்கும். "
++"துறை முன்னனுப்புதல் IPv4 இல் மட்டும்."
+ 
+ #. icmp filter
+ #: ../src/fw_tui.py:151 ../src/system-config-firewall.glade.h:45
+@@ -1232,8 +1227,8 @@ msgid ""
+ "Mark the ICMP types in the list, which should be rejected. All other ICMP "
+ "types are allowed to pass the firewall. The default is no limitation."
+ msgstr ""
+-"Mark the ICMP types in the list, which should be rejected. All other ICMP "
+-"types are allowed to pass the firewall. The default is no limitation."
++"பட்டியலில் ICMP வகைகளை குறிக்கவும், அது நிராகரிக்கப்பட வேண்டும். மற்ற அனைத்து ICMP "
++"வகைகளும் ஃபயர்வாலின் வழியாக செல்லும். முன்னிருப்புக்கு வரம்பு இல்லை."
+ 
+ #: ../src/fw_tui.py:164 ../src/system-config-firewall.glade.h:24
+ msgid "Custom Rules"
+@@ -1297,8 +1292,7 @@ msgid "Protocol:"
+ msgstr "நெறிமுறை:"
+ 
+ #: ../src/fw_tui.py:402 ../src/system-config-firewall.glade.h:76
+-msgid ""
+-"Please select the source and destination options according to your needs."
++msgid "Please select the source and destination options according to your needs."
+ msgstr "உங்கள் தேவைக்கேற்ப மூல மற்றும் இலக்கு விருப்பங்களை தேர்ந்தெடுக்கவும்."
+ 
+ #: ../src/fw_tui.py:407
+@@ -1414,10 +1408,8 @@ msgid "<b>User Skill Level</b>"
+ msgstr "<b>பயனர் திறமை நிலை</b>"
+ 
+ #: ../src/system-config-firewall.glade.h:7
+-msgid ""
+-"<b>Your current configuration is empty, all traffic will be blocked.</b>"
+-msgstr ""
+-"<b>உங்கள் தற்போதைய கட்டமைப்பு வெறுமையாக உள்ளது, அனைத்து போக்குவரத்தும் தடைப்படும்.</b>"
++msgid "<b>Your current configuration is empty, all traffic will be blocked.</b>"
++msgstr "<b>உங்கள் தற்போதைய கட்டமைப்பு வெறுமையாக உள்ளது, அனைத்து போக்குவரத்தும் தடைப்படும்.</b>"
+ 
+ #: ../src/system-config-firewall.glade.h:8
+ msgid "<big><b>Firewall Configuration Wizard</b></big>"
+@@ -1580,11 +1572,10 @@ msgid ""
+ "lost. If you do not want to lose your manual configuration changes, leave "
+ "this program without applying."
+ msgstr ""
+-"If you need further firewall settings, please modify your configuration by "
+-"hand, but keep in mind, that this tool is not able to load your custom "
+-"configuration. If you are using this tool, all your manual changes will be "
+-"lost. If you do not want to lose your manual configuration changes, leave "
+-"this program without applying."
++"உங்களுக்கு மேலும் ஃபயர்வால் அமைவுகள் தேவைப்பட்டால், உங்கள் கட்டமைப்பை கையால் மாற்றி, இந்த "
++"கருவி உங்கள் தனிபயன் கட்டமைப்பை ஏற்ற முடியவில்லை. இந்த கருவியை நீங்கள் பயன்படுத்தினால், "
++"உங்க்ள கைமுறை மாற்றங்கள் இழக்கப்படும். உங்கள் கைமுறை கட்டமைப்பை மாற்றங்களை இழக்க "
++"வேண்டாமென்றால், இந்த நிரலை அப்படியே விட்டுவிடவும்."
+ 
+ #: ../src/system-config-firewall.glade.h:53
+ msgid "Keep Configuration"
+@@ -1672,8 +1663,7 @@ msgstr ""
+ "உள்ளிடவும்."
+ 
+ #: ../src/system-config-firewall.glade.h:74
+-msgid ""
+-"Please select keep configuration or choose to load a default configuration."
++msgid "Please select keep configuration or choose to load a default configuration."
+ msgstr ""
+ "கட்டமைப்பை வைத்திருக்கவும் என்பதை தேர்ந்தெடுக்கவும் அல்லது ஒரு முன்னிருப்பு கட்டமைப்பை ஏற்ற "
+ "தேர்ந்தெடுக்கவும்."
+@@ -1823,3 +1813,5 @@ msgstr "system-config-firewall"
+ #: ../src/system-config-firewall.glade.h:117
+ msgid "translator-credits"
+ msgstr "I. Felix, ifelix@redhat.com"
++
++
+
+commit d5e45e3141cd92ac15b15f565e351b487622ee58
+Author: ifelix <ifelix@fedoraproject.org>
+Date:   Mon Aug 16 10:09:20 2010 +0000
+
+    l10n: Updates to Tamil (ta) translation
+    
+    Transmitted-via: Transifex (translate.fedoraproject.org)
+
+diff --git a/po/ta.po b/po/ta.po
+index c5c9508..6a66331 100644
+--- a/po/ta.po
++++ b/po/ta.po
+@@ -15,7 +15,7 @@ msgstr ""
+ "Project-Id-Version: system-config-firewall.master.ta\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2010-06-24 15:31+0200\n"
+-"PO-Revision-Date: 2010-08-16 15:30+0530\n"
++"PO-Revision-Date: 2010-08-16 15:39+0530\n"
+ "Last-Translator: I Felix <ifelix@redhat.com>\n"
+ "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
+ "MIME-Version: 1.0\n"
+@@ -1632,7 +1632,9 @@ msgid ""
+ "Please answer the questions in the following configuration steps. The wizard "
+ "leads you back to the main application and hides all unnecessary "
+ "configuration options."
+-msgstr "பின்வரும் கட்டமைப்பு படிநிலைகளில் வினாக்களுக்கு வி"
++msgstr ""
++"பின்வரும் கட்டமைப்பு படிநிலைகளில் வினாக்களுக்கு விடையளிக்கவும். இந்த வழிகாட்டி உங்களை முதன்மை "
++"பயன்பாட்டிற்கு அழைத்து சென்று தேவையில்லாத அனைத்து கட்டுமைப்பு விருப்பங்களையும் மறைக்கிறது."
+ 
+ #: ../src/system-config-firewall.glade.h:69
+ msgid "Please check your firewall settings after applying custom rules."

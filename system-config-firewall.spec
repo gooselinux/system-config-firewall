@@ -16,7 +16,7 @@
 Summary: A graphical interface for basic firewall setup
 Name: system-config-firewall
 Version: 1.2.27
-Release: 1%{?dist}
+Release: 3%{?dist}.2
 URL: http://fedorahosted.org/system-config-firewall
 License: GPLv2+
 ExclusiveOS: Linux
@@ -24,6 +24,7 @@ Group: System Environment/Base
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 BuildArch: noarch
 Source0: https://fedorahosted.org/released/system-config-firewall/%{name}-%{version}.tar.bz2
+Patch1: system-config-firewall-1.2.27-rhbz#624400.patch
 BuildRequires: desktop-file-utils
 BuildRequires: gettext
 BuildRequires: intltool
@@ -77,6 +78,7 @@ system-config-firewall-tui is a text user interface for basic firewall setup.
 
 %prep
 %setup -q
+%patch1 -p1 -b .rhbz#624400
 
 %build
 %configure %{?with_usermode: --enable-usermode} \
@@ -170,6 +172,15 @@ fi
 %{_datadir}/system-config-firewall/fw_tui.*
 
 %changelog
+* Mon Nov 22 2010 Thomas Woerner <twoerner@redhat.com> 1.2.27-3
+- reverted fix for rhbz#565625
+
+* Tue Sep 21 2010 Thomas Woerner <twoerner@redhat.com> 1.2.27-3
+- fixed tamil translation (rhbz#624400)
+
+* Thu Sep  9 2010 Thomas Woerner <twoerner@redhat.com> 1.2.27-2
+- fixed port of libvirt-tls (rhbz#565625)
+
 * Tue Aug 10 2010 Thomas Woerner <twoerner@redhat.com> 1.2.27-1
 - updated translations: bn_IN, de, fi, fr, gu, hi, it, ja, kn, ko, ml, mr, or,
                         pt_BR, ru, ta, te, zh_CN, zh_TW
